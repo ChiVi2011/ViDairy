@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/font/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf")
+    format("truetype");
+  font-family: "Quicksand";
+  src: url("../assets/font/Quicksand-Bold.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #23408e;
+  border-radius: 10px;
+}
+::-webkit-scrollbar:hover {
+  width: 5px;
+}
+body {
+  background-position: center;
+  font-family: "Quicksand", sans-serif;
+}
+.wapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+}

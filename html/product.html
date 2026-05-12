@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="product" class="container">
+      <!-- Siderbar -->
+      <div class="sidebar">
+        <div class="category">
+          <h3>Danh Mục</h3>
+          <ul class="category-list">
+            <li class="category-item">🥛 Sữa tươi</li>
+            <li class="category-item">🍓 Sữa chua</li>
+            <li class="category-item">🍼 Sữa bột</li>
+            <li class="category-item">🥜 Sữa hạt</li>
+            <li class="category-item">🧀 Phô mai & Bơ</li>
+          </ul>
+        </div>
+        <div class="fillter">
+          <h3>Bộ Lọc</h3>
+          <label
+            >Khoảng Giá
+            <input
+              type="range"
+              min="0"
+              max="100000"
+              value="1000000"
+              class="slider"
+              id="priceRange"
+          /></label>
+          <span>0đ</span>
+          <span>1.000.000đ</span>
+        </div>
+        <div class="filter-group">
+          <h3>Nhãn hàng</h3>
+          <label
+            ><input type="checkbox" name="brand" value="" />NutralisBaby</label
+          >
+          <label
+            ><input type="checkbox" name="brand" value="" />AmoraCare</label
+          >
+        </div>
+        <div class="capacity">
+          <h3>Dung tích</h3>
+          <label><input type="checkbox" name="brand" value="" />800g</label>
+          <label><input type="checkbox" name="brand" value="" />400g</label>
+        </div>
+      </div>
+      <!-- Product list -->
+      <div class="main-content">
+        <div class="top-bar">
+          <span>Hiển thị 1 - 8 trong 24 sản phẩm</span>
+          <label for=""
+            >Sắp xếp
+            <select name="sort-select" id="sort-select">
+              <option>Mới nhất</option>
+              <option>Giá thấp đến cao</option>
+              <option>Giá cao đến thấp</option>
+            </select>
+          </label>
+        </div>
+        <!-- Danh mục sản phẩm vơi file product.json -->
+        <div class="product-grid" id="product-container">
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+</html>

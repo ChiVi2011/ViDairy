@@ -140,11 +140,42 @@ input::placeholder {
 .product {
   display: flex;
   justify-content: space-between;
-  padding: 0 150px;
-  margin-top: 50px;
+  align-items: center;
+  margin-top: 30px;
+  padding: 200px;
+  width: 100%;
+  height: 200px;
 }
-
-.blod h2 {
+.cart-item {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+}
+.blod {
+  position: relative;
+  text-align: center;
+  background-color: #0d3ab6;
+  border-radius: 48% 52% 39% 61% / 71% 48% 52% 29%;
+  padding: 0;
+  margin: 30px 0;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 280px;
+}
+.blod img {
+  width: 450px;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  clip-path: inset(-50% 0% 0% 0% round 0 0 120px 250px);
+}
+.cart-item h2 {
   font-size: 32px;
   color: #23408e;
   font-weight: 700;
@@ -156,6 +187,6 @@ input::placeholder {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 15px;
   padding: 30px 0;
 }
